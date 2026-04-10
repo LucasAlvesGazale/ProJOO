@@ -135,23 +135,23 @@ namespace PadroesDeProjeto
             config.NomeApp = "Sistema de Notificações";
             config.PermitirEnvio = true;
             config.MaximoTentativas = 3;
-
+            
             Console.WriteLine(config.NomeApp);
             Console.WriteLine();
-
+            
             INotificacao notificacaoEmail = FabricaNotificacao.Criar(CanalNotificacao.Email);
             notificacaoEmail.Enviar("lucas@email.com", "Olá, esta é uma mensagem por email.");
-
+            
             Console.WriteLine();
-
+            
             INotificacao notificacaoSms = FabricaNotificacao.Criar(CanalNotificacao.Sms);
-            notificacaoSms.Enviar("11999999999", "Olá, esta é uma mensagem por SMS.");
-
+            notificacaoSms.Enviar("11999999", "Olá, esta é uma mensagem por SMS.");
+            
             Console.WriteLine();
-
+            
             INotificacao notificacaoPush = FabricaNotificacao.Criar(CanalNotificacao.Push);
             notificacaoPush.Enviar("usuario123", "Olá, esta é uma notificação push.");
-
+            
             Console.ReadLine();
         }
     }
