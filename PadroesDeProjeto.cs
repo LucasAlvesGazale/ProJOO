@@ -1,4 +1,4 @@
-namespace DesafioSimples
+namespace PadroesDeProjeto
 {
     enum CanalNotificacao
     {
