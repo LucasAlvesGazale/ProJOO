@@ -3,7 +3,6 @@ using System.IO;
 
 namespace HomeTheaterApp
 {
-    // ================= DEVICES =================
 
     class Televisao
     {
@@ -44,8 +43,6 @@ namespace HomeTheaterApp
         public void Atenuar() => Console.WriteLine("Luz reduzida");
         public void Desligar() => Console.WriteLine("Luz desligada");
     }
-
-    // ================= FACADE =================
 
     class HomeTheaterFacade
     {
@@ -118,9 +115,6 @@ namespace HomeTheaterApp
         }
     }
 
-    // ================= TESTES SIMPLES =================
-    // (Simulando @Test sem framework)
-
     class Testes
     {
         public static void TesteModoCinema()
@@ -175,8 +169,6 @@ namespace HomeTheaterApp
             );
         }
     }
-
-    // ================= MAIN =================
 
     class Program
     {
